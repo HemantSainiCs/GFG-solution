@@ -8,7 +8,7 @@ optional_exponent: (E|e)(+|-|epsilon) digits|epsilon
 
 
 types of exponenet no.=1e12 1.11e10 1e1.11
-
+A regular expression for verifying integer and float no..
 */
 
 import java.util.Scanner;
