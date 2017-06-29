@@ -1,3 +1,5 @@
+/*a regular expression for hexcode of 6 digits eg. #000000
+*/
 import java.io.Console;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
