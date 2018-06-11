@@ -1,0 +1,49 @@
+//to find if there is rotaion performed in the given sequence
+
+import java.util.Scanner;
+
+class find_element
+{
+public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		//int n=sc.nextInt();
+		int arr[]={3,4,5,1,2};
+		//int mid,beg,end;
+
+		int beg=0,end=arr.length-1,mid=0,flag=0;
+		mid=end/2;
+				System.out.println(end+" "+mid);
+int res=-1;
+
+		while(beg<end)//3 4 5 6 7 1 2 
+		{
+			if(arr[beg]>arr[mid])
+			{
+				//	System.out.println("entered if ");
+				
+				end=mid;
+				mid=beg+(end-beg)/2;
+				System.out.println(beg+" "+mid+" "+end);
+				res=end;
+			}
+			else if(arr[mid]>arr[end])
+				{
+ 				System.out.println("entered 2 if ");
+					
+					beg=mid;
+					mid=beg+(end-beg)/2;
+System.out.println(beg+" "+mid+" "+end);
+				res=beg;
+				}
+				else 
+				 	{
+				 		break;}
+		}
+		if(flag==1)
+			System.out.println("No rotation performed");
+		else 
+			System.out.println(mid);
+	}
+
+}
